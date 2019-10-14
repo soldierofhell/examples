@@ -206,7 +206,7 @@ def main_worker(gpu, ngpus_per_node, args):
         traindir,
         transforms.Compose([
             transforms.RandomResizedCrop(224),
-            transforms.RandomHorizontalFlip(),
+            #transforms.RandomHorizontalFlip(),
             transforms.ToTensor(),
             normalize,
         ]))
